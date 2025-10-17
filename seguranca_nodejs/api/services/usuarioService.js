@@ -1,6 +1,7 @@
 const database = require('../models')
 const { hash } = require('bcryptjs')
 const uuid = require('uuid')
+
 class UsuarioService {
     async cadastrar(dto) {
         const usuario = await database.usuarios.findOne({

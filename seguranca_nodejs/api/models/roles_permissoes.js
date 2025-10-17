@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
   }
   roles_permissoes.init({
     role_id: DataTypes.UUID,
-    permossao_id: DataTypes.UUID
+    permissao_id: DataTypes.UUID
   }, {
     sequelize,
     modelName: 'roles_permissoes',
